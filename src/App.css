@@ -2,6 +2,244 @@
   text-align: center;
 }
 
+.container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #556B2F;
+  width: 100%;
+  height: 100%;
+ 
+}
+.body{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+  margin-bottom: 5px;
+}
+.form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.textlbl{
+  font-size: 30px;
+  color:white;
+  margin-right: 100px;
+  text-shadow: 2px 2px #282c34;
+
+  
+}
+
+.btninput{
+  height: 36px;
+  width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 15px;
+  padding: 3px;
+  box-shadow: 1px 1px #282c34;
+}
+
+
+.txtinput{
+  font-size: 20px;
+  height: 100%;
+  width: 50%;
+  margin-left: 5px;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 1px 1px #282c34;
+}
+
+.list{
+  display:flex;
+  overflow: auto;
+  font-size: 15px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 120px;
+  height: 250px;
+  width: 900px;
+  padding:10px;
+  padding-top: 120px;
+ 
+}
+.itemlist{
+  display:flexbox;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-end;
+ 
+
+}
+
+.listbox{
+  display:flexbox;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.btnedit {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 25px;
+width: 45px;
+border-radius: 8px;
+padding: 3px;
+
+}
+
+.btndelete{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 25px;
+width: 20px;
+border-radius: 12px;
+padding: 3px;
+margin: 3px;
+margin-top: 8px;
+background-color: rgb(161, 7, 7);
+color:whitesmoke;
+border-color: #282c34;
+box-shadow: 1px 1px #282c34;
+}
+
+.boxbuttons{
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(2, 59, 35);
+  scrollbar-base-color: #C0C0C0;
+scrollbar-base-color: #C0C0C0;
+scrollbar-3dlight-color: #C0C0C0;
+scrollbar-highlight-color: #C0C0C0;
+scrollbar-track-color: #EBEBEB;
+scrollbar-arrow-color: black;
+scrollbar-shadow-color: #C0C0C0;
+scrollbar-dark-shadow-color: #C0C0C0;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background: #F4F4F4;
+  scrollbar-base-color: #C0C0C0;
+scrollbar-base-color: #C0C0C0;
+scrollbar-3dlight-color: #C0C0C0;
+scrollbar-highlight-color: #C0C0C0;
+scrollbar-track-color: #EBEBEB;
+scrollbar-arrow-color: black;
+scrollbar-shadow-color: #C0C0C0;
+scrollbar-dark-shadow-color: #C0C0C0;
+}
+::-webkit-scrollbar-thumb {
+  background: #dad7d7;
+  scrollbar-base-color: #C0C0C0;
+scrollbar-base-color: #C0C0C0;
+scrollbar-3dlight-color: #C0C0C0;
+scrollbar-highlight-color: #C0C0C0;
+scrollbar-track-color: #EBEBEB;
+scrollbar-arrow-color: black;
+scrollbar-shadow-color: #C0C0C0;
+scrollbar-dark-shadow-color: #C0C0C0;
+}
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .textlbl{
+      font-size: 20px;
+  }
+  .btninput{
+    height: 20px;
+    width: 50px;
+    font-size: 10px;
+  }
+  .txtinput{
+    font-size: 15px;
+}
+.list{
+  font-size: 13px;
+}
+}
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 959px) {
+  .textlbl{
+      font-size: 20px;
+  }
+  .btninput{
+    height: 25px;
+    width: 50px;
+    font-size: 10px;
+  }
+  .txtinput{
+    font-size: 15px;
+}
+.list{
+  font-size: 13px;
+}
+
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .textlbl{
+      font-size: 20px;
+  }
+  .btninput{
+    height:  25px;
+    width: 50px;
+    font-size: 10px;
+  }
+  .txtinput{
+    font-size: 15px;
+}
+.list{
+  font-size: 11px;
+}
+
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  .textlbl{
+      font-size: 15px;
+      margin-right: 15px;
+  }
+  .btninput{
+    height:  25px;
+    width: 50px;
+    font-size: 10px;
+  }
+  .txtinput{
+    font-size: 10px;
+}
+
+.list{
+  font-size: 8px;
+}
+
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
